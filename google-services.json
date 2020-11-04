@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "677317403930",
+    "firebase_url": "https://cooklabs-f2db3.firebaseio.com",
+    "project_id": "cooklabs-f2db3",
+    "storage_bucket": "cooklabs-f2db3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677317403930:android:f8d59f8d0aa37c8a0af8a3",
+        "android_client_info": {
+          "package_name": "team.hack_reva.cooklabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677317403930-v0gl3v2j5ip0ttmttggcdeqg2hv0d5qq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team.hack_reva.cooklabs",
+            "certificate_hash": "3bf42db307ad0364414589fe85d0d14495c1b59d"
+          }
+        },
+        {
+          "client_id": "677317403930-auji64vkcsdejt9r0dsbs3iv20p5eeel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3ynEvNJD_sKE8C5wcrNS-YGZOenKrwp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677317403930-auji64vkcsdejt9r0dsbs3iv20p5eeel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

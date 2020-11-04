@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CookLabs</string>
+    <string name="my_creations">My Creations</string>
+    <string name="recent_labs">Recent labs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main3">MainActivity3</string>
+</resources>
