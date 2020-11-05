@@ -27,7 +27,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                tools:srcCompat="@drawable/picsart_11_05_07_51_54" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/propic_icon"
@@ -43,13 +43,19 @@
 
             <TextView
                 android:id="@+id/item_heading"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/irish_grover"
                 android:layout_height="50dp"
-                android:background="#FFFFFF"
-                android:text="Checolete cake by unkela aunty"
+                android:background="#00000000"
+                android:padding="8dp"
+                android:text="You dont reply fast!!!"
+                android:gravity="center"
                 android:textSize="18sp"
                 android:textStyle="bold|italic"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias=".55"
+                app:layout_constraintBottom_toBottomOf="@id/background_image"
+                app:layout_constraintTop_toTopOf="@id/background_image"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
