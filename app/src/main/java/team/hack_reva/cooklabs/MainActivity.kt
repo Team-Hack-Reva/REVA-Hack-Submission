@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             create_btn.setOnClickListener {
                 if (lab_name_view.text.isNotEmpty()){
                     name_of_lab = lab_name_view.text.toString()
+                    dialog.dismiss()
                     startActivity(Intent(this@MainActivity, CreateLabActivity::class.java))
                 }
             }

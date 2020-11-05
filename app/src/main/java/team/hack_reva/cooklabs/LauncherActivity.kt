@@ -9,6 +9,10 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class LauncherActivity : AppCompatActivity() {
+    companion object{
+        lateinit var nameOfuserOfTheApp:String
+        lateinit var emailOfuserOfTheApp:String
+    }
     private var firebaseAuth: FirebaseAuth? = null
     var mAuthListener: FirebaseAuth.AuthStateListener? = null
     internal val TIME_OUT = 500
@@ -29,6 +33,9 @@ class LauncherActivity : AppCompatActivity() {
                         .get()
                         .addOnSuccessListener { document ->
                             if(document.data != null){
+                                nameOfuserOfTheApp = document.getString("name").toString()
+                                emailOfuserOfTheApp = document.getString("email").toString()
+
                                 Handler().postDelayed(
                                         {
                                             Log.d("TAG", "DocumentSnapshot data: ${document.data}")
