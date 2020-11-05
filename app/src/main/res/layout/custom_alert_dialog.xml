@@ -8,11 +8,22 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="#FF4C71"
+        app:layout_scrollFlags="scroll|enterAlways">
+    </androidx.appcompat.widget.Toolbar>
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:background="@drawable/rectangle_3"
+        android:padding="24dp"
+        android:layout_margin="32dp"
         android:hint="Name of cook lab"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="20dp" />
@@ -23,11 +34,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="start"
+        android:background="@drawable/rectangle_4"
+        android:textColor="@color/black"
+        android:fontFamily="@font/irish_grover"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText"
         app:layout_constraintVertical_bias="0.0" />
-
 </LinearLayout>

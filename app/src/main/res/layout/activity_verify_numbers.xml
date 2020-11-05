@@ -6,31 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".VerifyNumbersActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#F94A64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
     <EditText
         android:id="@+id/provide_otp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:digits="0123456789"
+        android:fontFamily="@font/irish_grover"
         android:ems="10"
         android:inputType="number"
         android:maxLength="6"
+        android:hint="Enter the OTP"
+        android:padding="24dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/rectangle_3"
         android:maxLines="1"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/signin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="32dp"
         android:layout_marginTop="128dp"
         android:enabled="false"
         android:text="sign in"
-        app:layout_constraintEnd_toEndOf="@+id/provide_otp"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toStartOf="@+id/provide_otp"
+        android:fontFamily="@font/irish_grover"
+        android:background="@drawable/rectangle_4"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/resend_code"
+        app:layout_constraintVertical_bias=".75"
         app:layout_constraintTop_toBottomOf="@+id/provide_otp" />
 
     <Button
@@ -41,11 +63,14 @@
         android:enabled="false"
         android:text="resend code"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/signin"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/signin"
-        app:layout_constraintTop_toBottomOf="@+id/signin"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@id/signin"
+        android:layout_margin="32dp"
+        android:background="@drawable/rectangle_4"
+        android:textColor="@color/black"
+        android:fontFamily="@font/irish_grover"
+        app:layout_constraintVertical_bias=".75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provide_otp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -57,7 +82,7 @@
         android:progressTint="#FF4C71"
         app:layout_constraintEnd_toEndOf="@+id/provide_otp"
         app:layout_constraintStart_toStartOf="@+id/provide_otp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/timer_text" />
 
     <TextView
         android:id="@+id/timer_text"
