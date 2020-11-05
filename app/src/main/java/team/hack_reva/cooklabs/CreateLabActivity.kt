@@ -78,8 +78,8 @@ class CreateLabActivity : AppCompatActivity() {
             return@setOnTouchListener true
         }
 
-
-        create_stop_btn.setOnClickListener {
+        //On-Click Event listener for stop button       
+        create_stop_btn.setOnClickListener { 
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Action cannot be reversed. Do you proceed?")
             builder.setMessage("You may need to create a new lab if you don't save it.")
@@ -97,7 +97,7 @@ class CreateLabActivity : AppCompatActivity() {
             alertDialog.setCancelable(true)
             alertDialog.show()
         }
-
+        //One-Click Event listener for save button
         create_save_btn.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Wish to add a cover photo for this cook lab?")
@@ -137,20 +137,20 @@ class CreateLabActivity : AppCompatActivity() {
         }
         
     }
-
+    //Function for the Start Recording functionality
     private fun startRecording() {
         try {
             mediaRecorder?.prepare()
             mediaRecorder?.start()
             state = true
-            Toast.makeText(this, "Recording started!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Recording started!", Toast.LENGTH_SHORT).show() //Prompt to denote successful recording start.
         } catch (e: IllegalStateException) {
             e.printStackTrace()
         } catch (e: IOException) {
             e.printStackTrace()
         }
     }
-
+    //Function for the Stop Recording functionality
     private fun stopRecording(){
         try {
             if(state){
@@ -158,14 +158,14 @@ class CreateLabActivity : AppCompatActivity() {
                 mediaRecorder?.release()
                 state = false
             }else{
-                Toast.makeText(this, "You are not recording right now!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "You are not recording right now!", Toast.LENGTH_SHORT).show() //Prompt to denote successful recording stop.
             }
         } catch (stopException: RuntimeException) {
             // handle cleanup here
         }
 
     }
-
+    //Function to open image from gallery for usage
     private fun pickimagefromgallery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
