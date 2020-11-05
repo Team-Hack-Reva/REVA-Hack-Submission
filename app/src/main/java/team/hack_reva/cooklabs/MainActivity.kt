@@ -1,5 +1,7 @@
+//Main Android App activity - Called when app is launched
 package team.hack_reva.cooklabs
 
+//Package imports
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
@@ -50,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 if (lab_name_view.text.isNotEmpty()){
                     name_of_lab = lab_name_view.text.toString()
                     dialog.dismiss()
-                    startActivity(Intent(this@MainActivity, CreateLabActivity::class.java))
+                    startActivity(Intent(this@MainActivity, CreateLabActivity::class.java)) //Starts the CreateLabActivity
                 }
             }
             dialog.show()
