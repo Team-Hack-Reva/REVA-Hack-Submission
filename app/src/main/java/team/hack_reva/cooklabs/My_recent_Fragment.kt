@@ -26,39 +26,7 @@ class My_recent_Fragment : Fragment() {
         recyclerView.layoutManager = layoutManager
         recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = postsAdapter
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
-        posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
-            , "https://wallpaperaccess.com/full/271679.jpg" ,
-            "This is first lab by neeralatha aunty", "asb/aeg/ase"))
+
         posts_list.add(Posts("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQey3S6VQ4qIppedXehx8CQYDshaMBwU1UwpQ&usqp=CAU"
             , "https://wallpaperaccess.com/full/271679.jpg" ,
             "This is first lab by neeralatha aunty", "asb/aeg/ase"))

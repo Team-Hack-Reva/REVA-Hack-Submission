@@ -1,3 +1,4 @@
+//Activity description for Login page functionality
 package team.hack_reva.cooklabs
 
 import android.content.Intent
@@ -30,9 +31,9 @@ class LoginActivity : AppCompatActivity() {
         country_code_view.isEnabled = false
         getOtpBtn.setOnClickListener {
             var country_code = country_code_view.text.toString()
-            country_code = "91"
+            country_code = "91"  //Defaulting country code to 91 (India)
             val phone_number = phone_number_view.text.toString()
-            if (country_code.isNotEmpty() and phone_number.isNotEmpty()){
+            if (country_code.isNotEmpty() and phone_number.isNotEmpty()){ //Conditional statements to check validity of phone number
                 if (phone_number.length < 10) {
                     Toast.makeText(this, "Phone number cannot be less than 10", Toast.LENGTH_SHORT).show()
                 }else if(phone_number.length > 10){
@@ -46,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
             }else{
-                Toast.makeText(this, "Phone number cannot be left empty", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Phone number cannot be left empty", Toast.LENGTH_SHORT).show() //Fail condition indicating phone no. empty
             }
         }
     }
