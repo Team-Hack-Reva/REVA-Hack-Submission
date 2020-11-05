@@ -263,10 +263,10 @@ class CreateLabActivity : AppCompatActivity() {
                 .collection("posts").document(name_of_lab)
         val hashMap = HashMap<String,Any>()
         hashMap["author"] = nameOfuserOfTheApp
-        hashMap["profile-picture-path"] = "cook-labs/$authuid/pictures/$name_of_img.jpg"
+        hashMap["cover-picture-path"] = "cook-labs/$authuid/pictures/$name_of_img.jpg"
         hashMap["name-of-post"] = name_of_lab
         hashMap["no-of-steps"] = current_count - 1
-        hashMap["uid-of-user"] = authuid
+        hashMap["uid-of-author"] = authuid
         hashMap["audio-storage-name"] = "cook-labs/$authuid/audio/$name_of_img"
         database.set(hashMap)
                 .addOnSuccessListener {

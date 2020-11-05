@@ -1,13 +1,15 @@
 package team.hack_reva.cooklabs
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.squareup.picasso.Callback
+import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
 class PostAdapterMainActivity(private var postsList:List<Posts>):
@@ -30,8 +32,21 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val post = postsList[position]
         holder.title.text = post.heading_text
-        Glide.with(context).load(post.user_pic_url).into(holder.profileimage)
-        Glide.with(context).load(post.background_pic_url).into(holder.backgroundImage)
+        val d = post.background_pic_url
+        Log.d("CHECK", "ADAPTER $d")
+
+        if(post.user_pic_url!=""){
+            Picasso.get().load(post.user_pic_url).placeholder(R.drawable.ic_baseline_account_circle_24).into(holder.profileimage)
+        }else{
+            holder.profileimage.setImageResource(R.drawable.ic_baseline_account_circle_24)
+        }
+        if(post.background_pic_url!=""){
+            Picasso.get().load(post.background_pic_url).placeholder(R.drawable.picsart_11_05_07_51_54).into(holder.backgroundImage)
+        }else{
+            holder.backgroundImage.setImageResource(R.drawable.picsart_11_05_07_51_54)
+        }
+
+
     }
 
     override fun getItemCount(): Int {
