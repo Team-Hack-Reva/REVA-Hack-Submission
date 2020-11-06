@@ -70,6 +70,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginRight="24dp"
             android:ems="10"
+            android:backgroundTint="@color/the_one"
             android:inputType="phone"
             android:fontFamily="@font/irish_grover"
             android:maxLength="10"
