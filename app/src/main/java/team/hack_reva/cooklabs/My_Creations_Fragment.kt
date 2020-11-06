@@ -56,13 +56,14 @@ class My_Creations_Fragment : Fragment() {
                             Log.d("DOWNLOAD", "Unable to download as it failed in downloading images")
                         }.addOnSuccessListener {
                             url_of_cover_pic = it.toString()
-                            Log.d("CHECK", "Url of cover pic $url_of_cover_pic")
-                            var url_of_profile_pic = ""
-                            photo_storage.child("user-accounts/profile-pictures/$uid_of_author").downloadUrl.addOnSuccessListener {
-                                url_of_profile_pic = it.toString()
-                                posts_list.add(Posts(url_of_profile_pic,url_of_cover_pic,name_of_dish,"user-cook-labs/$authuid/posts/$name_of_dish"))
-                                postsAdapter.notifyDataSetChanged()
-                            }
+                        }
+                        Log.d("CHECK", "Url of cover pic $url_of_cover_pic")
+                        var url_of_profile_pic = ""
+                        val post_pic = FirebaseStorage.getInstance().reference
+                        post_pic.child("user-accounts/profile-pictures/$uid_of_author").downloadUrl.addOnSuccessListener {
+                            url_of_profile_pic = it.toString()
+                            posts_list.add(Posts(url_of_profile_pic,url_of_cover_pic,name_of_dish,"user-cook-labs/$authuid/posts/$name_of_dish"))
+                            postsAdapter.notifyDataSetChanged()
                         }
 
 

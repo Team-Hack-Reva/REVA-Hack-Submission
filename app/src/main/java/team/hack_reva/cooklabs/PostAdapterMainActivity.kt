@@ -34,7 +34,8 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
         holder.title.text = post.heading_text
         val d = post.background_pic_url
         Log.d("CHECK", "ADAPTER $d")
-
+        holder.profileimage.setImageResource(R.drawable.ic_baseline_account_circle_24)
+        holder.backgroundImage.setImageResource(R.drawable.picsart_11_05_07_51_54)
         if(post.user_pic_url!=""){
             Picasso.get().load(post.user_pic_url).placeholder(R.drawable.ic_baseline_account_circle_24).into(holder.profileimage)
         }else{
