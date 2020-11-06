@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "677317403930-53a85tp53gp9amtrpvnro4n6n7ehuemc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team.hack_reva.cooklabs",
+            "certificate_hash": "519c76e923fcaae19c68bbb9c13b55db0c6daca6"
+          }
+        },
+        {
+          "client_id": "677317403930-v0gl3v2j5ip0ttmttggcdeqg2hv0d5qq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team.hack_reva.cooklabs",
+            "certificate_hash": "3bf42db307ad0364414589fe85d0d14495c1b59d"
+          }
+        },
+        {
           "client_id": "677317403930-auji64vkcsdejt9r0dsbs3iv20p5eeel.apps.googleusercontent.com",
           "client_type": 3
         }

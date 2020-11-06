@@ -10,11 +10,7 @@
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-<<<<<<< HEAD
         android:background="#C81D1D"
         android:src="@drawable/cookbooks_splash" />
-=======
-        android:background="@drawable/cooklabs_splash_generic"
-        />
->>>>>>> 7e3a8ba42a129dc96fe0e2b86a82c1e798001d7f
+
 </androidx.constraintlayout.widget.ConstraintLayout>
