@@ -15,6 +15,7 @@ class LauncherActivity : AppCompatActivity() {
     companion object{
         lateinit var nameOfuserOfTheApp:String
         lateinit var emailOfuserOfTheApp:String
+        lateinit var reference_path_to_play_the_lab:String
     }
     private var firebaseAuth: FirebaseAuth? = null
     var mAuthListener: FirebaseAuth.AuthStateListener? = null
@@ -50,6 +51,7 @@ class LauncherActivity : AppCompatActivity() {
                                                     val intent = Intent(this@LauncherActivity, PlayCookLabs::class.java)
                                                     Log.d("DEBUG", "User is already logged in and found dynamic link, so playcooklabsaccount is launched")
                                                     mAuthListener?.let { firebaseAuth?.removeAuthStateListener(it) }
+                                                    reference_path_to_play_the_lab = deepLink.toString()
                                                     startActivity(intent)
                                                     finish()
                                                 }, TIME_OUT.toLong())

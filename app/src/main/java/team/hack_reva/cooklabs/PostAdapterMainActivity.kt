@@ -27,6 +27,7 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import team.hack_reva.cooklabs.LauncherActivity.Companion.nameOfuserOfTheApp
+import team.hack_reva.cooklabs.LauncherActivity.Companion.reference_path_to_play_the_lab
 import java.io.File
 
 class PostAdapterMainActivity(private var postsList:List<Posts>):
@@ -66,13 +67,15 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
         }
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(context, "Short click", Toast.LENGTH_SHORT).show()
+            reference_path_to_play_the_lab = post.reference.toString()
+            context.startActivity(Intent(context, PlayCookLabs::class.java))
         }
         holder.itemView.setOnLongClickListener{
             progressDialogRecyclerView = ProgressDialog(context)
             progressDialogRecyclerView.setMessage("Generating the link for the post, selected.")
             progressDialogRecyclerView.show()
-            GenerateDynamicLink()
+
+            GenerateDynamicLink(post.reference.toString())
             true
         }
 
@@ -81,9 +84,9 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
         return postsList.size
     }
 
-    private fun GenerateDynamicLink(){
+    private fun GenerateDynamicLink(reference_path:String){
         val dynamicLink = Firebase.dynamicLinks.dynamicLink {
-            link = Uri.parse("https://www.momtouch-cookbooks.com/")
+            link = Uri.parse(reference_path)
             domainUriPrefix = "https://cooklabs.page.link"
             // Open links with this app on Android
             androidParameters { }
