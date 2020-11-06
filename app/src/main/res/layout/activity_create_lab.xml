@@ -6,20 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".CreateLabActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#F94A64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
     <ListView
         android:id="@+id/list_view_steps"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="590dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
     </ListView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="8dp"
         android:layout_gravity="bottom">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -28,6 +41,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:contentDescription="TODO"
+            android:backgroundTint="@color/the_one"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -40,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:backgroundTint="#FF4C71"
             app:layout_constraintBottom_toBottomOf="@+id/create_record_btn"
             app:layout_constraintEnd_toStartOf="@+id/create_record_btn"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:backgroundTint="@color/the_one"
             app:layout_constraintBottom_toBottomOf="@+id/create_record_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/create_record_btn"
