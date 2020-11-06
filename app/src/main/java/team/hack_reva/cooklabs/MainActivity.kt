@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val toolbar:androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.title = ""
-        window.statusBarColor = Color.rgb(249,74,100)
+        window.statusBarColor = Color.rgb(255, 92, 126)
         tabs.addTab(tabs.newTab().setText("Recent Labs"))
         tabs.addTab(tabs.newTab().setText("My Creations"))
         tabs.tabGravity = TabLayout.GRAVITY_FILL

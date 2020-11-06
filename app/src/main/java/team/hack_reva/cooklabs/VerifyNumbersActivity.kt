@@ -2,6 +2,7 @@ package team.hack_reva.cooklabs
 
 import android.app.ProgressDialog
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -34,6 +35,7 @@ class VerifyNumbersActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verify_numbers)
+        window.statusBarColor = Color.rgb(255, 92, 126)
         mAuth = FirebaseAuth.getInstance()
         progress_bar = findViewById<ProgressBar>(R.id.progressBar)
         provide_otp_et = findViewById<EditText>(R.id.provide_otp)

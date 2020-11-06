@@ -5,6 +5,7 @@ import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.media.MediaRecorder
 import android.net.Uri
 import android.os.Build
@@ -50,6 +51,7 @@ class CreateLabActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_lab)
+        window.statusBarColor = Color.rgb(255, 92, 126)
         list = mutableListOf<ListViewData>()
         adapter = StepsRecordAdapter(this, R.layout.item_view_createlab, list)
         list_view_steps.adapter = adapter
