@@ -26,6 +26,7 @@ import com.google.firebase.ktx.Firebase
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
+import org.json.JSONObject
 import team.hack_reva.cooklabs.LauncherActivity.Companion.nameOfuserOfTheApp
 import team.hack_reva.cooklabs.LauncherActivity.Companion.reference_path_to_play_the_lab
 import java.io.File
@@ -67,15 +68,17 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
         }
 
         holder.itemView.setOnClickListener {
-            reference_path_to_play_the_lab = post.reference.toString()
+            val array = mutableListOf<String>(post.heading_text,post.reference,post.uid_of_author,post.author,post.user_pic_url).toString()
+            reference_path_to_play_the_lab = "https://momtouch-cookbooks.com/array=$array"
             context.startActivity(Intent(context, PlayCookLabs::class.java))
         }
         holder.itemView.setOnLongClickListener{
             progressDialogRecyclerView = ProgressDialog(context)
             progressDialogRecyclerView.setMessage("Generating the link for the post, selected.")
             progressDialogRecyclerView.show()
-
-            GenerateDynamicLink(post.reference.toString())
+            // Here i need to create a json data make is serialisable and send it to gen dynamic array
+            val array = mutableListOf<String>(post.heading_text,post.reference,post.uid_of_author,post.author,post.user_pic_url).toString()
+            GenerateDynamicLink("https://momtouch-cookbooks.com/array=$array")
             true
         }
 
@@ -108,6 +111,7 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
             // Error
             // ...
             progressDialogRecyclerView.dismiss()
+            Log.e("ERROR", it.toString())
             Toast.makeText(context, "Error in generating the link. Please try again.", Toast.LENGTH_SHORT).show()
         }
 
@@ -131,4 +135,4 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
 
 }
 
-data class Posts(var user_pic_url:String, var background_pic_url:String, var heading_text:String, var reference:String)
+data class Posts(var user_pic_url:String, var background_pic_url:String, var heading_text:String, var reference:String, var step_count:Double,var author:String, var uid_of_author:String)

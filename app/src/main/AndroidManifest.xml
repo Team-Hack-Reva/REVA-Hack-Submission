@@ -30,7 +30,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="mom-touch-cookbooks.com"
+                    android:host="momtouch-cookbooks.com"
                     android:scheme="https"/>
             </intent-filter>
         </activity>

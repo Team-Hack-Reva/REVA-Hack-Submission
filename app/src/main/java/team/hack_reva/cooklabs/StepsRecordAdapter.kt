@@ -35,7 +35,7 @@ class StepsRecordAdapter(context:Context, var resource:Int, var items:List<ListV
         button_playpause.setOnClickListener {
             if(play_flag){
                 mediaPlayer.stop()
-                button_playpause.setImageResource(R.drawable.ic_baseline_play_circle_filled_24)
+                button_playpause.setImageResource(R.drawable.ic_baseline_play_arrow_24)
                 play_flag = false
             }else{
                 play_flag = true
@@ -46,7 +46,7 @@ class StepsRecordAdapter(context:Context, var resource:Int, var items:List<ListV
                     mediaPlayer.start()
                     mediaPlayer.setOnCompletionListener {
                         play_flag = false
-                        button_playpause.setImageResource(R.drawable.ic_baseline_play_circle_filled_24)
+                        button_playpause.setImageResource(R.drawable.ic_baseline_play_arrow_24)
                     }
 
                 }

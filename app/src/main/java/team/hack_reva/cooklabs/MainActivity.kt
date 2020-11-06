@@ -16,9 +16,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.google.android.material.tabs.TabLayout.TabLayoutOnPageChangeListener
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.storage.FirebaseStorage
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
+import team.hack_reva.cooklabs.LauncherActivity.Companion.nameOfuserOfTheApp
 import team.hack_reva.cooklabs.ui.main.ViewPagerAdapter
 import java.io.File
+import java.lang.System.load
 
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +35,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar:androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        val photo_storage = FirebaseStorage.getInstance().reference
+        photo_storage.child("user")
+        val authuid = FirebaseAuth.getInstance().currentUser?.uid.toString()
+        welcome_view.text = "Hi $nameOfuserOfTheApp"
+        photo_storage.child("/user-accounts/profile-pictures/$authuid").downloadUrl.addOnSuccessListener {
+            Picasso.get().load(it.toString()).placeholder(R.drawable.ic_baseline_account_circle_24).into(user_profile_pic)
+        }
         supportActionBar!!.title = ""
         window.statusBarColor = Color.rgb(249,74,100)
         tabs.addTab(tabs.newTab().setText("Recent Labs"))

@@ -67,7 +67,10 @@ class My_Creations_Fragment : Fragment() {
                             val post_pic = FirebaseStorage.getInstance().reference
                             post_pic.child("user-accounts/profile-pictures/$uid_of_author").downloadUrl.addOnSuccessListener {
                                 url_of_profile_pic = it.toString()
-                                posts_list.add(Posts(url_of_profile_pic,url_of_cover_pic,name_of_dish,"user-cook-labs/$authuid/posts/$name_of_dish"))
+                                no_of_steps?.let { it1 ->
+                                    Posts(url_of_profile_pic,url_of_cover_pic,name_of_dish,"user-cook-labs/$authuid/posts/$name_of_dish",
+                                        it1,author,uid_of_author)
+                                }?.let { it2 -> posts_list.add(it2) }
                                 postsAdapter.notifyDataSetChanged()
                             }
 
