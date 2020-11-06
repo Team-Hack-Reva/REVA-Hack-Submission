@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PlayCookLabs"></activity>
+        <activity android:name=".PlayCookLabs">
+        </activity>
         <activity android:name=".CreateLabActivity" />
         <activity android:name=".FillDetailsActivity" />
         <activity android:name=".LauncherActivity">
@@ -23,6 +24,14 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="mom-touch-cookbooks.com"
+                    android:scheme="https"/>
             </intent-filter>
         </activity>
         <activity android:name=".VerifyNumbersActivity" />
