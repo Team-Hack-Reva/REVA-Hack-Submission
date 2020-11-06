@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             Picasso.get().load(it.toString()).placeholder(R.drawable.ic_baseline_account_circle_24).into(user_profile_pic)
         }
         supportActionBar!!.title = ""
-        window.statusBarColor = Color.rgb(249,74,100)
+        window.statusBarColor = Color.rgb(255, 92, 126)
         tabs.addTab(tabs.newTab().setText("Recent Labs"))
         tabs.addTab(tabs.newTab().setText("My Creations"))
         tabs.tabGravity = TabLayout.GRAVITY_FILL

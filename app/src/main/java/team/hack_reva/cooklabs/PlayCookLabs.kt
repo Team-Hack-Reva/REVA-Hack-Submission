@@ -1,9 +1,13 @@
 package team.hack_reva.cooklabs
 
+<<<<<<< HEAD
 import android.app.ProgressDialog
 import android.media.MediaPlayer
 import android.media.tv.TvContract
 import android.net.Uri
+=======
+import android.graphics.Color
+>>>>>>> bd7919893e4278362e86530ce51838c7bfc1af6d
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,6 +25,7 @@ class PlayCookLabs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_cook_labs)
+<<<<<<< HEAD
         val response = reference_path_to_play_the_lab.substring(37)
         // 0 - heading, 1 - reference, 2 - uid of author, 3 - author, 4 - user pic url
         val array = (response.substring(1,response.length-1)).split(",") // Array is obtained
@@ -96,6 +101,9 @@ class PlayCookLabs : AppCompatActivity() {
 
         }
 
+=======
+        window.statusBarColor = Color.rgb(255, 92, 126)
+>>>>>>> bd7919893e4278362e86530ce51838c7bfc1af6d
 
     }
 }

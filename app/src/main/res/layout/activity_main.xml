@@ -66,14 +66,6 @@
             android:layout_height="match_parent"
             tools:context=".MainActivity">
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/view__pager"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
@@ -85,5 +77,13 @@
         android:layout_margin="16dp"
         android:backgroundTint="#FF4C71"
         app:rippleColor="#FF4C71"
+        app:borderWidth="0dp"
         android:src="@drawable/repeat_grid_10"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view__pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/viewpager"
+        app:layout_anchorGravity="center" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

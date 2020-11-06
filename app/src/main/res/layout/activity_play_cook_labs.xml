@@ -3,29 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".PlayCookLabs">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#F94A64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"></androidx.appcompat.widget.Toolbar>
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="403dp"
-        android:layout_height="417dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="30dp"
-        app:cardCornerRadius="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="42dp"
+        android:background="@drawable/rectangle_7"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:paddingHorizontal="32dp"
+            android:background="@drawable/rectangle_7"
             android:layout_height="match_parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
+<<<<<<< HEAD
                 android:id="@+id/author_pic"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
@@ -34,6 +45,13 @@
                 android:layout_marginEnd="102dp"
                 android:layout_marginBottom="121dp"
                 android:src="@drawable/ic_baseline_account_circle_24"
+=======
+                android:id="@+id/circleImageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="32dp"
+                android:src="@drawable/repeat_grid_8"
+>>>>>>> bd7919893e4278362e86530ce51838c7bfc1af6d
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +62,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="step-10"
+                android:text="Step-10"
+                android:textColor="@color/black"
+                android:fontFamily="@font/irish_grover"
                 android:textSize="30sp"
+                android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/author_pic"
                 app:layout_constraintStart_toStartOf="@+id/author_pic"
@@ -59,9 +80,9 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
-        app:cardCornerRadius="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="42dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintVertical_bias="1.0">
@@ -74,25 +95,26 @@
                 android:id="@+id/previous_step"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
+                app:layout_constraintEnd_toStartOf="@id/play_pause_step"
                 android:clickable="true"
+                android:layout_margin="16dp"
+                app:borderWidth="0dp"
+                android:backgroundTint="@color/the_one"
                 app:layout_constraintBottom_toBottomOf="@+id/play_pause_step"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/play_pause_step"
-                app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/play_pause_step"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="29dp"
+                android:layout_margin="16dp"
                 android:clickable="true"
+                app:borderWidth="0dp"
+                android:backgroundTint="@color/the_one"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/next_step"
-                app:layout_constraintHorizontal_bias="0.584"
                 app:layout_constraintStart_toEndOf="@+id/previous_step"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
@@ -101,12 +123,14 @@
                 android:id="@+id/next_step"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="72dp"
                 android:clickable="true"
+                app:borderWidth="0dp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/the_one"
+                app:layout_constraintStart_toEndOf="@id/play_pause_step"
                 app:layout_constraintBottom_toBottomOf="@+id/play_pause_step"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/play_pause_step"
-                app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
