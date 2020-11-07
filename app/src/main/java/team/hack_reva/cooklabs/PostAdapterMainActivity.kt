@@ -121,7 +121,7 @@ RecyclerView.Adapter<PostAdapterMainActivity.MyViewHolder>(){
                 " I am enjoying Mom's Touch-Cookbooks App." +
                     "I have shared a cook lab with you. Find the link here and prepare a great dish. $url.\n\n " +
                 "Haven't installed the app yet?. No issues just click on the above link to download the app." +
-                    "You can also download the app from github releases.\nhttps://github.com/releases/"
+                    "You can also download the app from github releases.\nhttps://github.com/Team-Hack-Reva/REVA-Hack-Submission/releases/tag/1.0.1"
 
             val sendIntent: Intent = Intent().apply {
             action = Intent.ACTION_SEND

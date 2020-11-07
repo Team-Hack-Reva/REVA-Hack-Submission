@@ -20,6 +20,9 @@ import java.io.File
 
 class PlayCookLabs : AppCompatActivity() {
     var count = 0
+    companion object{
+         var companion_GET_DOUBLE:Double = 0.0
+    }
     var playing_file = false
     lateinit var current_url: String
     lateinit var mediaPlayer: MediaPlayer
@@ -52,12 +55,14 @@ class PlayCookLabs : AppCompatActivity() {
         db.get().addOnSuccessListener {
             if (it.data!=null){
                 val count = it.getDouble("no-of-steps")?.toInt()
+                Log.d("CHEK", "THEC COUNT IS $count")
                 val audiopath = it.getString("audio-storage-name")
                 val json = JSONObject()
                 json.put("author", it.getString("author").toString())
                 json.put("cover-picture-path", it.getString("cover-picture-path").toString())
                 json.put("name-of-post",  it.getString("name-of-post").toString())
                 json.put("no-of-steps",  it.getDouble("no-of-steps"))
+                companion_GET_DOUBLE = it.getDouble("no-of-steps")?.toDouble()!!
                 json.put("uid-of-author",  it.getString("uid-of-author").toString())
                 json.put("audio-storage-name",  it.getString("audio-storage-name").toString())
                 BatchUploadAudioFiles(json)
@@ -163,7 +168,9 @@ class PlayCookLabs : AppCompatActivity() {
         hashMap["author"] = json.get("author").toString()
         hashMap["cover-picture-path"] = json.get("cover-picture-path").toString()
         hashMap["name-of-post"] = json.get("name-of-post").toString()
-        hashMap["no-of-steps"] = json.get("no-of-steps").toString().toDouble()
+        hashMap["no-of-steps"] = companion_GET_DOUBLE
+        Log.d("CHECKTHISSSS","${hashMap["no-of-steps"]}")
+
         hashMap["uid-of-author"] = json.get("uid-of-author").toString()
         hashMap["audio-storage-name"] = json.get("audio-storage-name").toString()
         database.set(hashMap)

@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="VALUECHECK" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -21,16 +22,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/CreateLabActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/CreateLabActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/My_recent_Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/My_recent_Fragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PlayCookLabs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PlayCookLabs.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_cook_labs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_cook_labs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PostAdapterMainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PostAdapterMainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,22 +157,22 @@
       <screen x="0" y="27" width="1366" height="701" />
     </state>
     <state x="474" y="280" width="417" height="201" key="Github.CreateGistDialog/0.27.1366.701@0.27.1366.701" timestamp="1604599891617" />
-    <state width="1320" height="228" key="GridCell.Tab.0.bottom" timestamp="1604729323735">
+    <state width="1320" height="132" key="GridCell.Tab.0.bottom" timestamp="1604729655443">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="228" key="GridCell.Tab.0.bottom/0.27.1366.701@0.27.1366.701" timestamp="1604729323735" />
-    <state width="1320" height="228" key="GridCell.Tab.0.center" timestamp="1604729323735">
+    <state width="1320" height="132" key="GridCell.Tab.0.bottom/0.27.1366.701@0.27.1366.701" timestamp="1604729655443" />
+    <state width="1320" height="132" key="GridCell.Tab.0.center" timestamp="1604729655443">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="228" key="GridCell.Tab.0.center/0.27.1366.701@0.27.1366.701" timestamp="1604729323735" />
-    <state width="1320" height="228" key="GridCell.Tab.0.left" timestamp="1604729323734">
+    <state width="1320" height="132" key="GridCell.Tab.0.center/0.27.1366.701@0.27.1366.701" timestamp="1604729655443" />
+    <state width="1320" height="132" key="GridCell.Tab.0.left" timestamp="1604729655443">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="228" key="GridCell.Tab.0.left/0.27.1366.701@0.27.1366.701" timestamp="1604729323734" />
-    <state width="1320" height="228" key="GridCell.Tab.0.right" timestamp="1604729323735">
+    <state width="1320" height="132" key="GridCell.Tab.0.left/0.27.1366.701@0.27.1366.701" timestamp="1604729655443" />
+    <state width="1320" height="132" key="GridCell.Tab.0.right" timestamp="1604729655443">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="228" key="GridCell.Tab.0.right/0.27.1366.701@0.27.1366.701" timestamp="1604729323735" />
+    <state width="1320" height="132" key="GridCell.Tab.0.right/0.27.1366.701@0.27.1366.701" timestamp="1604729655443" />
     <state x="347" y="164" key="run.anything.popup" timestamp="1604719774798">
       <screen x="0" y="27" width="1366" height="701" />
     </state>

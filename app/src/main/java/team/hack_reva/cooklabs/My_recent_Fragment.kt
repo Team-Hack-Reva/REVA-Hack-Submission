@@ -53,7 +53,7 @@ class My_recent_Fragment : Fragment() {
                         val storage_path = i.getString("audio-storage-name").toString()
                         val author = i.getString("author").toString()
                         val name_of_dish = i.getString("name-of-post").toString()
-                        val no_of_steps = i.getDouble("no-of-steps")?.toDouble()
+                        val no_of_steps = i.getDouble("no-of-steps")
                         var cover_pic_path = i.getString("cover-picture-path").toString()
                         cover_pic_path = cover_pic_path.replace(".jpg", "")
                         val uid_of_author = i.getString("uid-of-author").toString()
