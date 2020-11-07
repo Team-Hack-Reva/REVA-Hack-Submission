@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         val photo_storage = FirebaseStorage.getInstance().reference
         photo_storage.child("user")
         val authuid = FirebaseAuth.getInstance().currentUser?.uid.toString()
-        welcome_view.text = "Hi $nameOfuserOfTheApp"
+        welcome_view.text = "Welcome"
         photo_storage.child("/user-accounts/profile-pictures/$authuid").downloadUrl.addOnSuccessListener {
             Picasso.get().load(it.toString()).placeholder(R.drawable.ic_baseline_account_circle_24).into(user_profile_pic)
         }
