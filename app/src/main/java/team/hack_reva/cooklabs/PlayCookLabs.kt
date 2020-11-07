@@ -158,7 +158,10 @@ class PlayCookLabs : AppCompatActivity() {
     }
 
 
-
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
     private fun BatchUploadAudioFiles(json:JSONObject){
         val authuid = FirebaseAuth.getInstance().currentUser?.uid.toString()
 
