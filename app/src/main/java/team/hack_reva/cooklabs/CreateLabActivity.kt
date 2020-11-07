@@ -101,41 +101,46 @@ class CreateLabActivity : AppCompatActivity() {
         }
         //One-Click Event listener for save button
         create_save_btn.setOnClickListener {
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("Wish to add a cover photo for this cook lab?")
-            builder.setMessage("Default image will be used if image is not provided.")
-            builder.setPositiveButton("Upload image & save"){_,_->
-                progressDialog = ProgressDialog(this)
-                progressDialog.setMessage("opening gallery")
-                progressDialog.setCanceledOnTouchOutside(false)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE) ==
-                            PackageManager.PERMISSION_DENIED
-                    ) {
-                        //permission denied
+            if(list.isNotEmpty()){
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("Wish to add a cover photo for this cook lab?")
+                builder.setMessage("Default image will be used if image is not provided.")
+                builder.setPositiveButton("Upload image & save"){_,_->
+                    progressDialog = ProgressDialog(this)
+                    progressDialog.setMessage("opening gallery")
+                    progressDialog.setCanceledOnTouchOutside(false)
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        if (checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE) ==
+                                PackageManager.PERMISSION_DENIED
+                        ) {
+                            //permission denied
 
-                        val permissions = arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE)
-                        requestPermissions(permissions, FillDetailsActivity.permission_code)
-                    } else {
-                        //permission granted
-                        progressDialog.show()
-                        pickimagefromgallery()
+                            val permissions = arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE)
+                            requestPermissions(permissions, FillDetailsActivity.permission_code)
+                        } else {
+                            //permission granted
+                            progressDialog.show()
+                            pickimagefromgallery()
+                        }
                     }
                 }
-            }
-            builder.setNegativeButton("Just save"){_,_->
-                progressDialog = ProgressDialog(this)
-                progressDialog.setMessage("Started to upload all your audio")
-                name_of_img = "null"
-                progressDialog.show()
-                BatchUploadAudioFiles()
-            }
-            builder.setNeutralButton("cancel"){_,_->
+                builder.setNegativeButton("Just save"){_,_->
+                    progressDialog = ProgressDialog(this)
+                    progressDialog.setMessage("Started to upload all your audio")
+                    name_of_img = generateRandomName()
+                    progressDialog.show()
+                    BatchUploadAudioFiles()
+                }
+                builder.setNeutralButton("cancel"){_,_->
 
+                }
+                val alertDialog = builder.create()
+                alertDialog.setCancelable(true)
+                alertDialog.show()
+
+            }else{
+                Toast.makeText(this,"Empty Lab sessions cannot be created. please create a single step", Toast.LENGTH_SHORT).show()
             }
-            val alertDialog = builder.create()
-            alertDialog.setCancelable(true)
-            alertDialog.show()
         }
         
     }

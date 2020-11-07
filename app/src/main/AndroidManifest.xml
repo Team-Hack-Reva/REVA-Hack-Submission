@@ -15,11 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PlayCookLabs">
+        <activity android:name=".PlayCookLabs"
+            android:launchMode = "singleTop"
+            >
         </activity>
-        <activity android:name=".CreateLabActivity" />
-        <activity android:name=".FillDetailsActivity" />
-        <activity android:name=".LauncherActivity">
+        <activity
+            android:launchMode = "singleTop"
+            android:name=".CreateLabActivity" />
+        <activity android:name=".FillDetailsActivity"
+            android:launchMode = "singleTop"
+            />
+        <activity
+            android:launchMode = "singleTop"
+            android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,10 +42,15 @@
                     android:scheme="https"/>
             </intent-filter>
         </activity>
-        <activity android:name=".VerifyNumbersActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".VerifyNumbersActivity"
+            android:launchMode = "singleTop"
+            />
+        <activity
+            android:launchMode = "singleTop"
+            android:name=".LoginActivity" />
         <activity
             android:name=".MainActivity"
+            android:launchMode = "singleTop"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <meta-data

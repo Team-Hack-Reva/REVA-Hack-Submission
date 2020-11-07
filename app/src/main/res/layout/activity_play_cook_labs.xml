@@ -36,22 +36,16 @@
             android:layout_height="match_parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
-<<<<<<< HEAD
                 android:id="@+id/author_pic"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+
                 android:layout_marginStart="101dp"
                 android:layout_marginTop="96dp"
                 android:layout_marginEnd="102dp"
                 android:layout_marginBottom="121dp"
-                android:src="@drawable/ic_baseline_account_circle_24"
-=======
-                android:id="@+id/circleImageView"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="32dp"
                 android:src="@drawable/repeat_grid_8"
->>>>>>> bd7919893e4278362e86530ce51838c7bfc1af6d
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,11 +56,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="Step-10"
-                android:textColor="@color/black"
-                android:fontFamily="@font/irish_grover"
-                android:textSize="30sp"
                 android:layout_marginBottom="16dp"
+                android:fontFamily="@font/irish_grover"
+                android:textColor="@color/black"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/author_pic"
                 app:layout_constraintStart_toStartOf="@+id/author_pic"

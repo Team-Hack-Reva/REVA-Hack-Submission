@@ -13,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc46a47e-52b2-40e1-bb31-afb66d15620f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,18 +24,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/CreateLabActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/CreateLabActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/My_Creations_Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/My_Creations_Fragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/My_recent_Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/My_recent_Fragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PlayCookLabs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PlayCookLabs.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PostAdapterMainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/PostAdapterMainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/StepsRecordAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/team/hack_reva/cooklabs/StepsRecordAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_cook_labs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_cook_labs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +42,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,26 +161,26 @@
       <screen x="0" y="27" width="1366" height="701" />
     </state>
     <state x="474" y="280" width="417" height="201" key="Github.CreateGistDialog/0.27.1366.701@0.27.1366.701" timestamp="1604599891617" />
-    <state width="1320" height="211" key="GridCell.Tab.0.bottom" timestamp="1604687505038">
+    <state width="1320" height="228" key="GridCell.Tab.0.bottom" timestamp="1604729323735">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="211" key="GridCell.Tab.0.bottom/0.27.1366.701@0.27.1366.701" timestamp="1604687505038" />
-    <state width="1320" height="211" key="GridCell.Tab.0.center" timestamp="1604687505037">
+    <state width="1320" height="228" key="GridCell.Tab.0.bottom/0.27.1366.701@0.27.1366.701" timestamp="1604729323735" />
+    <state width="1320" height="228" key="GridCell.Tab.0.center" timestamp="1604729323735">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="211" key="GridCell.Tab.0.center/0.27.1366.701@0.27.1366.701" timestamp="1604687505037" />
-    <state width="1320" height="211" key="GridCell.Tab.0.left" timestamp="1604687505037">
+    <state width="1320" height="228" key="GridCell.Tab.0.center/0.27.1366.701@0.27.1366.701" timestamp="1604729323735" />
+    <state width="1320" height="228" key="GridCell.Tab.0.left" timestamp="1604729323734">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="211" key="GridCell.Tab.0.left/0.27.1366.701@0.27.1366.701" timestamp="1604687505037" />
-    <state width="1320" height="211" key="GridCell.Tab.0.right" timestamp="1604687505037">
+    <state width="1320" height="228" key="GridCell.Tab.0.left/0.27.1366.701@0.27.1366.701" timestamp="1604729323734" />
+    <state width="1320" height="228" key="GridCell.Tab.0.right" timestamp="1604729323735">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state width="1320" height="211" key="GridCell.Tab.0.right/0.27.1366.701@0.27.1366.701" timestamp="1604687505037" />
-    <state x="347" y="164" key="run.anything.popup" timestamp="1604690776941">
+    <state width="1320" height="228" key="GridCell.Tab.0.right/0.27.1366.701@0.27.1366.701" timestamp="1604729323735" />
+    <state x="347" y="164" key="run.anything.popup" timestamp="1604719774798">
       <screen x="0" y="27" width="1366" height="701" />
     </state>
-    <state x="347" y="164" key="run.anything.popup/0.27.1366.701@0.27.1366.701" timestamp="1604690776941" />
+    <state x="347" y="164" key="run.anything.popup/0.27.1366.701@0.27.1366.701" timestamp="1604719774798" />
     <state x="346" y="48" width="672" height="678" key="search.everywhere.popup" timestamp="1604674929953">
       <screen x="0" y="27" width="1366" height="701" />
     </state>

@@ -39,7 +39,7 @@ class My_recent_Fragment : Fragment() {
         val photo_storage = FirebaseStorage.getInstance().reference
         val firestore = FirebaseFirestore.getInstance().collection("user-cook-labs")
             .document(authuid)
-            .collection("recently-viewed-posts")
+            .collection("recent-posts")
             .addSnapshotListener { snapshot, error->
                 if(!snapshot?.isEmpty!!){
                     posts_list.clear()
